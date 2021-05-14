@@ -5,8 +5,9 @@ import Plot
 // This type acts as the configuration for your website.
 struct MyWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
-        // Add the sections that you want your website to contain here:
-        case posts
+        case home
+        case resume
+        case contact
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -15,8 +16,8 @@ struct MyWebsite: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
-    var name = "MyWebsite"
-    var description = "A description of MyWebsite"
+    var name = "Achraf Trabelsi"
+    var description = "I am highly motivated, curious, with very good adaptability and a developed sense of relationship. I love anything relating to computers, programming and Tech in general. I’m on the pulse of the latest technology news. I am constantly scouring the Internet for the latest iOS news, apps, games, tips, tutorials, mobile devices and Apple Services."
     var language: Language { .english }
     var imagePath: Path? { nil }
 }
