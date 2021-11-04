@@ -7,7 +7,6 @@ struct MyWebsite: Website {
     enum SectionID: String, WebsiteSectionID {
         case home
         case resume
-        case contact
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -23,4 +22,4 @@ struct MyWebsite: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try MyWebsite().publish(withTheme: .foundation)
+try MyWebsite().publish(withTheme: .lacha)

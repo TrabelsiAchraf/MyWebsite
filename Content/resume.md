@@ -1,4 +1,5 @@
-## Experience
+#  Resume
+
 <p align="left">
 <h3> Niji </h3>
 <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEC_5PIkpox2w/company-logo_100_100/0/1519855953189?e=1629331200&v=beta&t=ayL_s0-nttfI8L4QlWQOEJidTnMpa48Muk03O0_mulY" width="56" max-width="100%" alt="Niji"/>
