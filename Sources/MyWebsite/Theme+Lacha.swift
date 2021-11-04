@@ -28,10 +28,9 @@ private struct LachaHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: nil),
                 .wrapper(
-                    .h1(.text(index.title)),
-                    .p(
-                        .class("description"),
-                        .text(context.site.description)
+                    .div(
+                        .class("content"),
+                        .contentBody(index.content.body)
                     ),
                     .h2("Latest content"),
                     .itemList(
@@ -214,6 +213,9 @@ private extension Node where Context == HTML.BodyContext {
 
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
+            .p(
+                .text("Achraf Trabelsi © 2021. All rights reserved.")
+            ),
             .p(
                 .text("Generated using "),
                 .a(
