@@ -6,11 +6,8 @@
 
 I'm **iOS developer** 👨🏻‍💻
 
-I am highly motivated, curious, with very good adaptability and a developed sense of relationship.\
 I love anything relating to computers, programming and Tech in general.\
 I’m on the pulse of the latest technology news. \
 I am constantly scouring the Internet for the latest iOS news, apps, games, tips, tutorials, mobile devices and Apple Services.
 
 Feel free to follow me on **[Twitter](https://twitter.com/Tr_Achraf)**, **[Github](https://github.com/TrabelsiAchraf)** and **[Linkedin](https://www.linkedin.com/in/achraf-trabelsi-83148156/)**.
-
-Achraf Trabelsi © 2021. All rights reserved.
