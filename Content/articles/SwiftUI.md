@@ -1,12 +1,8 @@
 ---
 date: 2021-05-04 01:10
-description: A TT of my first post.
-tags: first, article
+description: SwiftUI is Apple's brand new framework for building user interfaces for iOS, tvOS, macOS, and watchOS..
+tags: SwiftUI, Swift
 ---
 # SwiftUI
 
-My first post's text.
-My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.My first post's text.
-
-## Test
-#1
+SwiftUI is Apple's brand new framework for building user interfaces for iOS, tvOS, macOS, and watchOS..
