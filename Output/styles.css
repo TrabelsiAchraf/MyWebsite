@@ -112,8 +112,8 @@ nav li a.selected {
 
 .item-list {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .item-list > li {
@@ -124,17 +124,6 @@ nav li a.selected {
     border-radius: 20px;
     background-color: var(--card-background-color);
     margin-bottom: 20px;
-}
-
-.item-list article {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  height: 100%;
-}
-
-.item-list article > a {
-  flex: 1;
 }
 
 .item-list > li:hover {
@@ -177,13 +166,6 @@ nav li a.selected {
   flex: 1;
   display: block;
   text-align: end;
-}
-
-@media (min-width: 768px) {
-  .item-list {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
 }
 
 .item-list p {
