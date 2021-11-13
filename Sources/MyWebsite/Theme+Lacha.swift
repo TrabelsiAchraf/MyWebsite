@@ -196,7 +196,11 @@ private extension Node where Context == HTML.BodyContext {
                         .text(item.title)
                     )),
                     .tagList(for: item, on: site),
-                    .p(.text(item.description))
+                    .p(.text(item.description)),
+                    .div(
+                        .class("date"),
+                        .p(.text(item.date.getFormattedDate(format: "MMM d, yyyy")))
+                    )
                 ))
             }
         )
@@ -228,5 +232,13 @@ private extension Node where Context == HTML.BodyContext {
                 .href("/feed.rss")
             ))
         )
+    }
+}
+
+extension Date {
+   func getFormattedDate(format: String) -> String {
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = format
+        return dateformat.string(from: self)
     }
 }

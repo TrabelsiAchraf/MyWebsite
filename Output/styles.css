@@ -162,7 +162,7 @@ nav li a.selected {
   text-decoration: none;
 }
 
-.item-date {
+.date {
   flex: 1;
   display: block;
   text-align: end;
