@@ -173,7 +173,7 @@ strong {
     }
 
     .item-list > li {
-        background-color: #23282f;
+        background-color: var(--card-background-color);
         border-color: var(--accent-color);
     }
 
