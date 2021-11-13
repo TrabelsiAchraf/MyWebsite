@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #FFC600;
+  --card-background-color: #23282f;
+  --background-color: #292f36;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
 }
 
 body {
-    background: #292f36;
+    background: var(--background-color);
     color: #000;
     font-family: Helvetica, Arial;
     text-align: center;
@@ -20,7 +26,7 @@ body {
 }
 
 header {
-    background-color: #eee;
+    background-color: var(--background-color);
 }
 
 header .wrapper {
@@ -34,9 +40,10 @@ header a {
 }
 
 header .site-name {
-    font-size: 1.5em;
-    color: #000;
+    font-size: 2.0em;
+    color: var(--accent-color);
     font-weight: bold;
+    display: inline-block;
 }
 
 nav {
@@ -49,8 +56,19 @@ nav li {
     line-height: 1.5em;
 }
 
+nav li a {
+  display: inline-block;
+  padding: 8px 24px;
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+nav li a:hover {
+  background: var(--card-background-color);
+}
+
 nav li a.selected {
-    text-decoration: underline;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 h1 {
@@ -89,6 +107,7 @@ a {
 .item-list h1 {
     margin-bottom: 15px;
     font-size: 1.3em;
+    color: var(--accent-color);
 }
 
 .item-list p {
@@ -134,12 +153,12 @@ a {
 }
 
 footer {
-    color: #8a8a8a;
+    color: var(--background-color);
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #222;
+        background-color: var(--background-color);
     }
 
     body,
@@ -148,11 +167,12 @@ footer {
     }
 
     .item-list > li {
-        background-color: #333;
+        background-color: #23282f;
+        border-color: var(--accent-color);
     }
 
     header {
-        background-color: #000;
+        background-color: var(--background-color);
     }
 }
 
@@ -165,5 +185,5 @@ footer {
 /* Additional Styles */
 
 strong {
-    color: #B68A00;
+    color: var(--accent-color);
 }
