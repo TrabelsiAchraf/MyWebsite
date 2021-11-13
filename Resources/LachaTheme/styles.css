@@ -156,6 +156,12 @@ footer {
     color: var(--background-color);
 }
 
+strong {
+    color: var(--accent-color);
+}
+
+/* @media */
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: var(--background-color);
@@ -180,10 +186,4 @@ footer {
     .wrapper {
         padding: 40px 20px;
     }
-}
-
-/* Additional Styles */
-
-strong {
-    color: var(--accent-color);
 }
