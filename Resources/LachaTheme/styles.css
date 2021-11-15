@@ -63,8 +63,7 @@ header {
 
 header .wrapper {
     padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
+    padding-bottom: 0px;
 }
 
 header a {
@@ -76,6 +75,21 @@ header .site-name {
     color: var(--accent-color);
     font-weight: bold;
     display: inline-block;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  header .wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  header .site-name {
+    margin-bottom: 0px;
+  }
 }
 
 /**
@@ -83,7 +97,7 @@ header .site-name {
  */
 
 nav {
-    margin-top: 20px;
+    margin-left: auto;
 }
 
 nav li {
@@ -157,7 +171,7 @@ nav li a.selected {
   text-decoration: none;
 }
 
-.date {
+.item-date {
   flex: 1;
   display: block;
   text-align: end;

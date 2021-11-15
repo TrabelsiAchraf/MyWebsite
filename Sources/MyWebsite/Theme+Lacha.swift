@@ -171,16 +171,14 @@ private extension Node where Context == HTML.BodyContext {
         return .header(
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
-                .if(sectionIDs.count > 1,
-                    .nav(
-                        .ul(.forEach(sectionIDs) { section in
-                            .li(.a(
-                                .class(section == selectedSection ? "selected" : ""),
-                                .href(context.sections[section].path),
-                                .text(context.sections[section].title)
-                            ))
-                        })
-                    )
+                .nav(
+                    .ul(.forEach(sectionIDs) { section in
+                        .li(.a(
+                            .class(section == selectedSection ? "selected" : ""),
+                            .href(context.sections[section].path),
+                            .text(context.sections[section].title)
+                        ))
+                    })
                 )
             )
         )
@@ -198,7 +196,7 @@ private extension Node where Context == HTML.BodyContext {
                     .tagList(for: item, on: site),
                     .p(.text(item.description)),
                     .div(
-                        .class("date"),
+                        .class("item-date"),
                         .p(.text(item.date.getFormattedDate(format: "MMM d, yyyy")))
                     )
                 ))
