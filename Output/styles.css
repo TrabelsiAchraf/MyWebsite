@@ -1,7 +1,8 @@
 :root {
-  --accent-color: #FFC600;
+  --accent-color: #dfd;
   --card-background-color: #23282f;
   --background-color: #292f36;
+  --text-color: #ddd;
 }
 
 * {
@@ -16,7 +17,7 @@
 
 body {
     background: var(--background-color);
-    color: #000;
+    color: var(--text-color);
     font-family: Helvetica, Arial;
     text-align: center;
     grid-template-rows: auto 1fr auto;
@@ -110,12 +111,6 @@ nav li a.selected {
  Item List
  */
 
-.item-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
 .item-list > li {
     display: block;
     border: 1px solid var(--accent-color);
@@ -166,6 +161,7 @@ nav li a.selected {
   flex: 1;
   display: block;
   text-align: end;
+  margin-top: 20px;
 }
 
 .item-list p {
@@ -211,7 +207,7 @@ nav li a.selected {
 .tag-list a,
 .tag a {
     text-decoration: none;
-    color: #ddd;
+    color: #dfd;
 }
 
 .tag-list a:hover {
