@@ -22,4 +22,9 @@ struct MyWebsite: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try MyWebsite().publish(withTheme: .lacha)
+try MyWebsite().publish(using: [
+    .addMarkdownFiles(),
+    .copyResources(),
+    .generateHTML(withTheme: .lacha),
+    .generateSiteMap()
+])
