@@ -1,6 +1,6 @@
 #  Hi there!
 
-<img src="/me.jpg" width="150" height="150" style="border-radius:50%" />
+<img src="/avatar.png" width="150" height="150" style="border-radius:50%" />
    
 ## My name is **Achraf**.
 
