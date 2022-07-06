@@ -14,7 +14,7 @@ extension Theme where Site == MyWebsite {
     static var lacha: Self {
         Theme(
             htmlFactory: LachaHTMLFactory(),
-            resourcePaths: ["Resources/LachaTheme/styles.css"]
+            resourcePaths: ["/styles.css"]
         )
     }
 }
