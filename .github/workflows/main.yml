@@ -1,0 +1,2 @@
+- name: Swift Publish Generate Static Site
+  uses: joeblau/publish-generate-action@1.0.0
