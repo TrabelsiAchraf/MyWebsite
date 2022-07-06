@@ -14,7 +14,7 @@ struct MyWebsite: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://achraftrabelsi.onrender.com/")!
+    var url = URL(string: "https://trabelsiachraf.github.io/MyWebsite/")!
     var name = "Achraf Trabelsi"
     var description = ""
     var language: Language { .english }
