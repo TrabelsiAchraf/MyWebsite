@@ -14,7 +14,7 @@ struct MyWebsite: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://trabelsiachraf.github.io/")!
+    var url = URL(string: "https://master--achraftrabelsi.netlify.app/")!
     var name = "Achraf Trabelsi"
     var description = ""
     var language: Language { .english }
